@@ -1,0 +1,37 @@
+{
+  "name": "ipfs-dropzone",
+  "version": "1.0.0",
+  "description": "Dropzone.js subclass that publishes files to IPFS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiatjaf/dropzone-ipfs.git"
+  },
+  "keywords": [
+    "ipfs",
+    "dropzone",
+    "file",
+    "upload",
+    "drag",
+    "drop",
+    "html"
+  ],
+  "author": "Giovanni T. Parra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiatjaf/dropzone-ipfs/issues"
+  },
+  "peerDependencies": {
+    "dropzone": "^5.2.0",
+    "ipfs": "^0.27.5"
+  },
+  "dependencies": {
+    "blob-to-buffer": "^1.2.6",
+    "dropzone": "^5.2.0",
+    "ipfs": "^0.27.5"
+  },
+  "homepage": "https://github.com/fiatjaf/dropzone-ipfs#readme"
+}
