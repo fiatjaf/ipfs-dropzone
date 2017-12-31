@@ -1,6 +1,6 @@
 {
   "name": "ipfs-dropzone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dropzone.js subclass that publishes files to IPFS",
   "main": "index.js",
   "scripts": {
@@ -29,9 +29,7 @@
     "ipfs": "^0.27.5"
   },
   "dependencies": {
-    "blob-to-buffer": "^1.2.6",
-    "dropzone": "^5.2.0",
-    "ipfs": "^0.27.5"
+    "blob-to-buffer": "^1.2.6"
   },
   "homepage": "https://github.com/fiatjaf/dropzone-ipfs#readme"
 }
