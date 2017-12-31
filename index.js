@@ -8,7 +8,10 @@ class IPFSDropzone extends Dropzone {
     super(el, options)
 
     this.node = null
-    this.ipfsRepoName = options.ipfsRepoName || 'dz-ipfs'
+    this.ipfsRepoName = options.ipfsRepoName || 'ipfs-dropzone'
+    this.ipfsPath = typeof options.ipfsPath === 'function'
+      ? options.ipfsPath
+      : file => file.name
   }
 
   uploadFiles (files) {
@@ -44,7 +47,10 @@ class IPFSDropzone extends Dropzone {
           let buf = buffers[i]
           let file = files[i]
 
-          node.files.add(buf, {
+          node.files.add({
+            path: this.options.ipfsPath(file),
+            content: buf
+          }, {
             progress: loaded => {
               this._updateFilesUploadProgress([file], null, {
                 loaded: loaded,
@@ -52,9 +58,7 @@ class IPFSDropzone extends Dropzone {
               })
             }
           }, (err, res) => {
-            let ipfsFile = res[0]
-            file.hash = ipfsFile.hash
-            file.path = ipfsFile.path
+            file.ipfs = res
 
             if (err) {
               this._errorProcessing([file], `ipfs add error: ${err}`)
