@@ -65,3 +65,9 @@ dz.on('success', file => {
 ## What is the LICENSE?
 
 The MIT License.
+
+## Visitor statistics for this repository
+
+![](http://ght.trackingco.de/fiatjaf/ipfs-dropzone)
+
+(From the GitHub API and http://ght.trackingco.de/)
