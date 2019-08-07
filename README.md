@@ -58,16 +58,6 @@ dz.on('success', file => {
   * I don't know how to publish this package in a way all JS transpilers and bundlers out there can understand. Please help me.
   * Please read the source if something is unclear. The source is really small.
 
-## Who's using this?
-
-  * https://filemap.xyz
-
 ## What is the LICENSE?
 
 The MIT License.
-
-## Visitor statistics for this repository
-
-![](http://ght.trackingco.de/fiatjaf/ipfs-dropzone)
-
-(From the GitHub API and http://ght.trackingco.de/)
